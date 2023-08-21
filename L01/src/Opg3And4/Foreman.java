@@ -1,4 +1,4 @@
-package Opg3;
+package Opg3And4;
 
 public class Foreman extends Mechanic {
     private int årForUdnævnelse;

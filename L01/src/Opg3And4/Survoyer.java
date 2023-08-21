@@ -1,4 +1,4 @@
-package Opg3;
+package Opg3And4;
 
 public class Survoyer extends Mechanic{
     private int synPrUge;
