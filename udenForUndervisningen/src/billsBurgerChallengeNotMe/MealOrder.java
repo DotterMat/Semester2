@@ -1,6 +1,4 @@
-package billsBurgerChallenge;
-
-import javax.imageio.plugins.tiff.GeoTIFFTagSet;
+package billsBurgerChallengeNotMe;
 
 public class MealOrder {
     private Burger burger;

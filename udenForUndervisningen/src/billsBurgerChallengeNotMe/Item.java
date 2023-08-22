@@ -1,4 +1,4 @@
-package billsBurgerChallenge;
+package billsBurgerChallengeNotMe;
 
 public class Item {
     private String type;

@@ -1,4 +1,4 @@
-package billsBurgerChallenge;
+package billsBurgerChallengeNotMe;
 
 public class Main {
     public static void main(String[] args) {
