@@ -13,4 +13,7 @@ public class ScienceFiction extends Movie {
                 "Space Guys Chase Aliens",
                 "Planet Blows Up");
     }
+    public void watchScienceFiction() {
+        System.out.println("Watching a Scince Ficture Thriller!");
+    }
 }

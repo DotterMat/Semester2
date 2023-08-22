@@ -27,6 +27,7 @@ public class Car extends Vehicle{
     public void stop() {
         super.stop();
     }
+
     protected void action() {
         System.out.println("We are boosting");
     }

@@ -13,7 +13,7 @@ public class Main {
 
         Vehicle t1 = new Truck("Pensy", "Octavia", 20, 1300, 2000);
 
-
+        //cars
         ArrayList<Car> cars = new ArrayList<>();
         cars.add((Car) c1);
         cars.add((Car) c2);
@@ -25,9 +25,13 @@ public class Main {
         c1.stop();
         c1.action();
         System.out.println();
+
+
+        //motorcycles
         ArrayList<Mortorcycle> mortorcycles = new ArrayList<>();
         mortorcycles.add((Mortorcycle) m1);
         mortorcycles.add((Mortorcycle) m2);
+
         for (Mortorcycle m : mortorcycles) {
             m.displayInfo();
         }
@@ -35,8 +39,12 @@ public class Main {
         m1.stop();
         m1.action();
         System.out.println();
+
+        //trucks
+
         ArrayList<Truck> trucks = new ArrayList<>();
         trucks.add((Truck) t1);
+
         for (Truck t : trucks) {
             t.displayInfo();
         }

@@ -16,4 +16,7 @@ public class Adventure extends Movie {
                 "Indiana Jones",
                 "Riders of justice");
     }
+    public void watchAdventure() {
+        System.out.println("Watching an Adventure!");
+    }
 }
