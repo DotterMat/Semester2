@@ -22,7 +22,7 @@ public class Main {
         regularMeal.printItemizedList();
 */
         MealOrder secondMeal = new MealOrder("turkey","7-up","chili");
-        secondMeal.addBurgerToppings("LETTUCE","CHEESE","MAYO");
+        secondMeal.addBurgerToppings("BACON","HAM","SALAMI");
         secondMeal.setDrinkSIze("SMALL");
         secondMeal.printItemizedList();
     }
