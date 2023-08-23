@@ -1,4 +1,4 @@
-package Trying;
+package printf;
 
 public class Print {
 
