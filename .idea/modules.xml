@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/L01 (Polymorphism)/L01.iml" filepath="$PROJECT_DIR$/L01 (Polymorphism)/L01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L02-abstract/L02-abstract.iml" filepath="$PROJECT_DIR$/L02-abstract/L02-abstract.iml" />
       <module fileurl="file://$PROJECT_DIR$/Semester2.iml" filepath="$PROJECT_DIR$/Semester2.iml" />
       <module fileurl="file://$PROJECT_DIR$/udenForUndervisningen/UdenForUndervisningen.iml" filepath="$PROJECT_DIR$/udenForUndervisningen/UdenForUndervisningen.iml" />
     </modules>
