@@ -23,7 +23,7 @@ public abstract class Figur {
 
     @Override
     public String toString() {
-        return String.format("%s",navn + " " + area());
+        return navn.toUpperCase() + ":";
     }
 }
 

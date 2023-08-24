@@ -1,21 +1,27 @@
 package Opg2;
 
-import java.time.Year;
-
 public class Ellipse extends Figur {
 
-
-    public Ellipse(double x, double y) {
-        super(x, y);
+    double littleAxe;
+    double bigAxe;
+    public Ellipse(double x, double y, double littleAxe, double bigAxe) {
+        super(x,y);
+        this.bigAxe = bigAxe;
+        this.littleAxe = littleAxe;
     }
 
-    @Override
+
     public double area() {
-        return 3.14 * getX() * getY();
+        return 3.14 * littleAxe * bigAxe;
     }
+
 
     @Override
     public String toString() {
-        return super.toString();
+        String streg = "-".repeat(30);
+        String streg2 = "-".repeat(30);
+        System.out.println(streg);
+        return super.toString() + " \nAreal: " + area() + " \nStorakse: " + bigAxe + " \nLilleakse: "+ littleAxe;
     }
+
 }

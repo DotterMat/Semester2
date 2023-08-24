@@ -15,6 +15,9 @@ public class Kvardrat extends Figur{
 
     @Override
     public String toString() {
-        return super.toString();
+        String streg = "-".repeat(30);
+        String streg2 = "-".repeat(30);
+        System.out.println(streg);
+        return super.toString() +  " \nAreal: " + area() + "\n" + streg2;
     }
 }

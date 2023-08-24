@@ -1,9 +1,12 @@
 package Opg3;
 
+import java.util.ArrayList;
+
 public class Orderline {
     private int lineNumber;
     private int count;
     private Product product;
+
     public Orderline(int lineNumber, int count, Product product) {
         this.lineNumber = lineNumber;
         this.count = count;
@@ -21,6 +24,15 @@ public class Orderline {
     public Product getProduct() {
         return product;
     }
+
+    public int orderLinePrice() {
+      int total = 0;
+       return total += product.getUnitPrice();
+    }
+    public double getOrderLinePrice() {
+        return orderLinePrice();
+    }
+
 }
 
 

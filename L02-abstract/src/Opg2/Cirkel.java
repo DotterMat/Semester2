@@ -14,6 +14,7 @@ public class Cirkel extends Figur{
 
     @Override
     public String toString() {
-        return super.toString();
+        String streg = "-".repeat(30);
+        return super.toString() + " \nAreal: " + area() + "\n" + streg;
     }
 }

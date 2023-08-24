@@ -6,6 +6,7 @@ import java.util.ArrayList;
 public class Customer {
     private String name;
     private LocalDate birthDay;
+    private Discount discount;
 
     private ArrayList<Order> orders= new ArrayList<>();
     public Customer(String name, LocalDate birthDay) {
@@ -33,5 +34,15 @@ public class Customer {
     }
     public void removeOrder(Order order) {
         orders.remove(order);
+    }
+    public double totalBuy() {
+    double total = 0;
+    for(Order o : orders) {
+        total += o.orderPrice();
+    }
+    return total;
+    }
+    public double totalBuyWithDiscount(double price) {
+        return totalBuy() + discount.getDiscount(price);
     }
 }
