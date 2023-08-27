@@ -1,8 +1,8 @@
 package Opg3;
 
-public class Discount {
+public abstract class Discount {
 
-    public double getDiscount(double price) {
-        return (price * 15) / 100;
-    }
+    public abstract double getDiscount(double price);
+
+
 }

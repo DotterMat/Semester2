@@ -23,8 +23,10 @@ public class Main {
     c1.addOrder(o1);
     c2.addOrder(o2);
 
-
-
+    Discount d1 = new FixedDiscount(250,1000);
+    c1.setDiscount(d1);
+        System.out.println(c1.totalBuyWithDiscount());
+       c1.printTotalPriceWithAndWithoutDiscount();
 
     }
 }

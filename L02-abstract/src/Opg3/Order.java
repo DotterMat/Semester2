@@ -19,7 +19,7 @@ public class Order {
     }
 
     public ArrayList<Orderline> getOrderlines() {
-        return orderlines;
+        return new ArrayList<>(orderlines);
     }
     public double orderPrice() {
         double total = 0;
@@ -30,6 +30,11 @@ public class Order {
     }
     public double getOrderPrice() {
         return orderPrice();
+    }
+
+    @Override
+    public String toString() {
+        return "Den totale pris på varen er: " + orderPrice() + " kr.";
     }
 }
 

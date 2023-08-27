@@ -8,7 +8,8 @@ public class Customer {
     private LocalDate birthDay;
     private Discount discount;
 
-    private ArrayList<Order> orders= new ArrayList<>();
+    private ArrayList<Order> orders = new ArrayList<>();
+
     public Customer(String name, LocalDate birthDay) {
         this.name = name;
         this.birthDay = birthDay;
@@ -25,6 +26,7 @@ public class Customer {
     public LocalDate getBirthDay() {
         return birthDay;
     }
+
     public void addOrder(Order order) {
         orders.add(order);
     }
@@ -32,17 +34,47 @@ public class Customer {
     public ArrayList<Order> getOrders() {
         return orders;
     }
+
     public void removeOrder(Order order) {
         orders.remove(order);
     }
+
     public double totalBuy() {
-    double total = 0;
-    for(Order o : orders) {
-        total += o.orderPrice();
+        double total = 0;
+        for (Order o : orders) {
+            total += o.getOrderPrice();
+        }
+        return total;
     }
-    return total;
+
+    public double totalBuyWithDiscount() {
+      double discounts = 0;
+       if (discount != null) {
+           for (Order o : orders) {
+               discounts = totalBuy() - discount.getDiscount(o.orderPrice());
+       }
+           return discounts;
+
+        }
+        return this.totalBuy();
     }
-    public double totalBuyWithDiscount(double price) {
-        return totalBuy() + discount.getDiscount(price);
+    public void printTotalPriceWithAndWithoutDiscount() {
+        if (discount == null) {
+            for (Order o : orders) {
+                System.out.println(o);
+            }
+        } else {
+            for (Order o : orders) {
+                System.out.println("Den totale pris for en varer uden tilbud er: " + o.orderPrice() + " kr.");
+                if(discount.getDiscount(o.orderPrice()) != 0) {
+                    System.out.println("Den totale pris for en ordre med tilbud er: " + (o.orderPrice() - discount.getDiscount(o.orderPrice()) + " kr."));
+                }
+            }
+        }
+    }
+
+    public void setDiscount(Discount discount) {
+        this.discount = discount;
     }
 }
+
