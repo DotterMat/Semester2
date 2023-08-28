@@ -25,12 +25,22 @@ public class Custumer implements Comparable<Custumer> {
 
     @Override
     public int compareTo(Custumer o) {
-        if (this.last_name.compareTo(o.getLast_name()) == 0) {
-            return this.first_name.compareTo(o.getFirst_name());
-        } else {
-            return this.last_name.compareTo(o.getLast_name());
+        int last_name_comparation = this.last_name.compareTo(o.getLast_name());
+        if (last_name_comparation != 0) {
+            return last_name_comparation;
         }
+        //hvis efternavnene er ens, sammenlignes fornavnene.
+        int first_name_comparation = this.first_name.compareTo(o.getFirst_name());
+        if (first_name_comparation != 0) {
+            return first_name_comparation;
+        }
+        //hvis både efternavnene og fornavnene er ens, sammenlignes alderen.
+        return Integer.compare(this.age, o.getAge());
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + getLast_name() + " " + getLast_name() + " " + getLast_name();
+    }
 }
 
