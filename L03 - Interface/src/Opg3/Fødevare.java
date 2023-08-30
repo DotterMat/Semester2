@@ -30,10 +30,7 @@ public class Fødevare extends Vare {
 
 
 
-    @Override
-    public String toString() {
-        return super.toString() + String.format("%23.2f",getPris()) + " kr.";
     }
-}
+
 
 

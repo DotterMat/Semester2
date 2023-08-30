@@ -1,6 +1,6 @@
 package Opg3;
 
-public class Elartikel extends Vare{
+public class Elartikel extends Vare {
     private int gennemsnitligEnergiPrTime;
 
     public Elartikel(String navn, int vareNummer, String beskrivelse, double pris, int gennemsnitligEnergiPrTime) {
@@ -19,15 +19,14 @@ public class Elartikel extends Vare{
 
     @Override
     public double getMoms() {
-        if(super.getPris() > 3 ) {
+        if (super.getPris() > 3) {
             return (super.getPris() * 30) / 100;
         }
         return super.getPris();
     }
 
-    @Override
-    public String toString() {
-        return super.toString() + String.format("%23.2f",getPris()) + " kr.";
-    }
+
+
 }
+
 

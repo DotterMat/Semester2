@@ -24,16 +24,8 @@ public class Spiritus extends Vare {
         return (super.getPris() * 80) / 100;
     }
 
-    @Override
-    public void addIndkøbskurv(Indkøbsvogn indkøbsvogn) {
-        super.addIndkøbskurv(indkøbsvogn);
     }
 
-    @Override
-    public String toString() {
-        return super.toString() + String.format("%20.2f",getPris()) + " kr.";
-    }
-}
 
 
 

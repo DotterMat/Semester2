@@ -39,26 +39,14 @@ public class Vare extends Indkøbsvogn {
         return (getPris() * 25) / 100;
     }
 
-    public void addIndkøbskurv(Indkøbsvogn indkøbsvogn) {
-        this.addIndkøbskurv(indkøbsvogn);
-    }
-
-    public String toString() {
-        return String.format("%s", getNavn());
-    }
-    public String print() {
-        return String.format("%s%27.2f",getNavn(),getPris()) + " kr.";
+    @Override
+    public void tilføjVare(Vare vare) {
+        super.tilføjVare(vare);
     }
 
 
-    public double samletPrisMoms(ArrayList<Vare> vares) {
-        double total = 0;
-        for (Vare v : vares) {
-            total += v.getMoms();
-        }
-        return total;
-    }
 }
+
 
 
 
