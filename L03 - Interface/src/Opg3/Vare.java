@@ -7,6 +7,7 @@ public class Vare extends Indkøbsvogn {
     private int vareNummer;
     private String beskrivelse;
     private double pris;
+    private Indkøbsvogn indkøbsvogn;
 
     public Vare(String navn, int vareNummer, String beskrivelse, double pris) {
         this.navn = navn;
@@ -27,14 +28,13 @@ public class Vare extends Indkøbsvogn {
         return beskrivelse;
     }
 
-    @Override
+
     public double getPris() {
         return pris;
 
 
     }
 
-    @Override
     public double getMoms() {
         return (getPris() * 25) / 100;
     }
@@ -49,13 +49,7 @@ public class Vare extends Indkøbsvogn {
     public String print() {
         return String.format("%s%27.2f",getNavn(),getPris()) + " kr.";
     }
-    public double samletPris(ArrayList<Vare> varer) {
-        double total = 0;
-        for (Vare v : varer) {
-            total += v.getPris();
-        }
-        return total;
-    }
+
 
     public double samletPrisMoms(ArrayList<Vare> vares) {
         double total = 0;

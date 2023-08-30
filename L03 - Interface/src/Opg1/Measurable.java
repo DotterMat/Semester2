@@ -5,5 +5,6 @@ public interface Measurable {
 
     public String toString();
 
+
 }
 
