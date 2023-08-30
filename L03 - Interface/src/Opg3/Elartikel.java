@@ -3,8 +3,8 @@ package Opg3;
 public class Elartikel extends Vare {
     private int gennemsnitligEnergiPrTime;
 
-    public Elartikel(String navn, int vareNummer, String beskrivelse, double pris, int gennemsnitligEnergiPrTime) {
-        super(navn, vareNummer, beskrivelse, pris);
+    public Elartikel(String navn, int vareNummer, String beskrivelse, double pris, int gennemsnitligEnergiPrTime, int antal) {
+        super(navn, vareNummer, beskrivelse, pris,antal);
         this.gennemsnitligEnergiPrTime = gennemsnitligEnergiPrTime;
     }
 

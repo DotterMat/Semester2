@@ -9,8 +9,8 @@ public class Fødevare extends Vare {
 
     private ArrayList<Vare> varer = new ArrayList<>();
 
-    public Fødevare(String navn, int vareNummer, String beskrivelse, LocalDate holdbarhedsDato, double pris) {
-        super(navn, vareNummer, beskrivelse, pris);
+    public Fødevare(String navn, int vareNummer, String beskrivelse, LocalDate holdbarhedsDato, double pris,int antal) {
+        super(navn, vareNummer, beskrivelse, pris,antal);
         this.holdbarhedsDato = holdbarhedsDato;
     }
 
