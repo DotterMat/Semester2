@@ -2,12 +2,11 @@ package Opg3;
 
 import java.util.ArrayList;
 
-public class Vare extends Indkøbsvogn {
+public class Vare {
     private String navn;
     private int vareNummer;
     private String beskrivelse;
     private double pris;
-    private Indkøbsvogn indkøbsvogn;
     private int antal;
 
     public Vare(String navn, int vareNummer, String beskrivelse, double pris, int antal) {
@@ -32,7 +31,7 @@ public class Vare extends Indkøbsvogn {
 
 
     public double getPris() {
-        return antal * pris;
+        return antal * pris + getMoms();
     }
 
 
@@ -41,7 +40,7 @@ public class Vare extends Indkøbsvogn {
     }
 
     public double getMoms() {
-        return (getPris() * 25) / 100;
+        return (this.pris * 25) / 100;
     }
 
     public void addIndkøbskurv(Indkøbsvogn indkøbsvogn) {

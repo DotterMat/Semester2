@@ -10,10 +10,10 @@ public class Spiritus extends Vare {
         this.beskrivelse = beskrivelse;
         this.alkoholProcent = alkoholProcent;
     }
-    @Override
+   @Override
     public double getPris() {
-        return super.getPris() + getMoms();
-    }
+       return super.getPris() + getMoms();
+}
     @Override
     public double getMoms() {
         if (super.getPris() > 90) {
