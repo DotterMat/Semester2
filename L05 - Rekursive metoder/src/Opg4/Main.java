@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(reverse("ged"));
         System.out.println(reverse("Andreas"));
-        System.out.println("Kristine" + " " + reverse("Kristine"));
+        System.out.println("Kristine" + " reverse: " + reverse("Kristine"));
 
     }
 
@@ -18,7 +18,5 @@ public class Main {
         }
         return s2;
     }
-
-
 }
 

@@ -2,7 +2,7 @@ package Opg7;
 
 public class Main {
     public static void main(String[] args) {
-
+        System.out.println(dominoBlock(29));
     }
 
     public static int dominoBlock(int n) {
@@ -14,5 +14,4 @@ public class Main {
             return dominoBlock(n - 1) + dominoBlock(n - 2);
         }
     }
-
 }
