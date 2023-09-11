@@ -19,22 +19,15 @@ public class Main {
     }
 
     private static int sum(ArrayList<Integer> list, int l, int h) {
-        int m = (l + h) / 2;
         int totalsum = 0;
-        if (l <= m) {
+        if (l == h) {
+            return list.get(l);
+        } else {
+            int m = (l + h) / 2;
             int sum1 = sum(list, l, m);
             int sum2 = sum(list, m + 1, h);
-            if (sum1 > sum2) {
-                return sum1;
-            }
-
-
-
-         (h >= m) {
-            sum2 += sum(list, l, h);
+            return totalsum += sum1 + sum2;
         }
-        return totalsum += sum1 + sum2;
-
     }
 }
 
