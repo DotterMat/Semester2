@@ -12,13 +12,13 @@ public class Main {
 
     }
 
-    private static int even(List<Integer> numbers) {
+    public static int even(List<Integer> numbers) {
         int count = 0;
         count = countNumbers(numbers,count,0);
         return count;
     }
 
-    public static int countNumbers(List<Integer> numbers, int count, int index) {
+    private static int countNumbers(List<Integer> numbers, int count, int index) {
         if (index == numbers.size()) {
             return count;
         }

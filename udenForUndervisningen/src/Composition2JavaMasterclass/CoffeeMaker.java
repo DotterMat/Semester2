@@ -6,6 +6,8 @@ public class CoffeeMaker extends SmartKitchen{
     public CoffeeMaker(Refrigerator icebox, DishWasher dishWasher, CoffeeMaker coffeeMaker, boolean hasWorkToDo) {
         super(icebox, dishWasher, coffeeMaker);
         this.hasWorkToDo = hasWorkToDo;
+        this.hasWorkToDo = hasWorkToDo;
+        +++ ls l pa pasl med dig
     }
 
     public void setHasWorkToDo(boolean hasWorkToDo) {

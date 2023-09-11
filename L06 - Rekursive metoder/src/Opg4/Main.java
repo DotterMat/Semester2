@@ -1,15 +1,17 @@
 package Opg4;
 
-import java.sql.SQLClientInfoException;
-
 public class Main {
     public static void main(String[] args) {
-        System.out.println(sequenceNumber(6));
+        System.out.println(calcNo(7));
+        System.out.println(calcNoIt(6));
 
     }
 
     // Rekursiv metode
-    public static int sequenceNumber(int n) {
+
+    //no3 = no2 + no1 + 3 * no0
+    // = 5 + 1 + 3 + 3 * 2
+    public static int calcNo(int n) {
         if (n == 0) {
             return 2;
         } else if (n == 1) {
@@ -17,15 +19,14 @@ public class Main {
         } else if (n == 2) {
             return 5;
         } else if (n > 2 && n % 2 == 0) {
-            return (2 * sequenceNumber(n - 3) - sequenceNumber(n - 1));
+            return (2 * calcNo(n - 3) - calcNo(n - 1));
         } else {
-            return sequenceNumber(n - 1) + sequenceNumber(n - 2) + 3 * sequenceNumber(n - 3);
+            return calcNo(n - 1) + calcNo(n - 2) + 3 * calcNo(n - 3);
         }
     }
 
-
     //iterativ metode
-    public static int sequenseIterative(int n) {
+    public static int calcNoIt(int n) {
         int[] result = new int[n];
         result[0] = 2;
         result[1] = 1;
