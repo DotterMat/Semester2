@@ -1,9 +1,8 @@
 package Opg1;
 
-import javax.imageio.metadata.IIOMetadataFormatImpl;
 import java.util.ArrayList;
 
-public class Main {
+public class MainSum {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
