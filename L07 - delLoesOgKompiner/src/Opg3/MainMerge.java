@@ -47,6 +47,7 @@ public class MainMerge {
 
         while (i < n1 && j < n2) {
             if (left.get(i) <= right.get(j)) {
+                //Her sættes de sorteret lister ind i det eksisterende array igen
                 list.set(k, left.get(i));
                 i++;
             } else {

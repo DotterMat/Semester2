@@ -3,4 +3,9 @@
   <component name="CompilerConfiguration">
     <addNotNullAssertions enabled="false" />
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="L08 - Generic" options="--add-exports java.base/com=ALL-UNNAMED,ALL-UNNAMED" />
+    </option>
+  </component>
 </project>

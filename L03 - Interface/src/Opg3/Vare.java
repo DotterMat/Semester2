@@ -31,7 +31,7 @@ public class Vare {
 
 
     public double getPris() {
-        return antal * pris + getMoms();
+        return antal * pris;
     }
 
 
