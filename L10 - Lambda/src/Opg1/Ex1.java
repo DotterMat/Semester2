@@ -1,3 +1,6 @@
+package Opg1;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
@@ -22,15 +25,29 @@ public class Ex1 {
         System.out.println(result1.getName());
 
         Predicate<Person> filter2 = person -> person.getName().chars().filter(ch -> ch == 'i').count() > 1;
-        Person result2 = findFirst(persons,filter2);
+        Person result2 = findFirst(persons, filter2);
         System.out.println(result2.getName());
 
         Predicate<Person> filter3 = person -> person.getName().length() == person.getAge();
-        Person result3 = findFirst(persons,filter3);
+        Person result3 = findFirst(persons, filter3);
         System.out.println(result3.getName());
 
+        List<Person> list1 = findAll(persons, p -> p.getAge() < 30);
+        System.out.println(list1);
 
+        List<Person> list2 = findAll(persons, p -> p.getName().chars().filter(ch -> ch == 'i').count() > 0);
+        System.out.println(list2);
+
+        List<Person> list3 = findAll(persons, p -> p.getName().charAt(0) == 'S');
+        System.out.println(list3);
+
+        List<Person> list4 = findAll(persons, p -> p.getName().length() == 5);
+        System.out.println(list4);
+
+        List<Person> list5 = findAll(persons, p -> p.getName().length() >= 6 && p.getAge() < 40);
+        System.out.println(list5);
     }
+
 
 
     /**
@@ -44,5 +61,15 @@ public class Ex1 {
                 return p;
         }
         return null;
+    }
+
+    public static List<Person> findAll(List<Person> list, Predicate<Person> filter) {
+        List<Person> result = new ArrayList<>();
+        for (Person p : list) {
+            if (filter.test(p)) {
+                result.add(p);
+            }
+        }
+        return result;
     }
 }
