@@ -26,25 +26,23 @@ public class Test {
         jakkaGrades.add(02);
         jakkaGrades.add(10);
 
+        College3 college = new College3("Klarrup");
+        College3 college1 = new College3("JankuEpu");
+        College3 college12 = new College3("Jabutu");
+        Student3 Henrik = new Student3(20, "Henrik Downy", henrikGrades);
+        Student3 Jan = new Student3(20, "Jan Michaelsen", janGrades);
+        Student3 Jakka = new Student3(10, "Jakka", jakkaGrades);
 
-        College4 college = new College4("Klarrup");
-        College4 college1 = new College4("JankuEpu");
-        College4 college12 = new College4("Jabutu");
-        Student4 student = new Student4(10, "Jakka", jakkaGrades);
-        Student4 student1 = new Student4(20, "Jan Michaelsen", janGrades);
-        Student4 student2 = new Student4(10, "Jakka", jakkaGrades);
-
-        college.addStudent(student);
-        college1.addStudent(student1);
-        college12.addStudent(student2);
+        college.addStudent(Henrik);
+        college1.addStudent(Jan);
+        college12.addStudent(Jakka);
         System.out.println("Henrik har " + college.calcAverage());
         System.out.println("Jan har " + college1.calcAverage());
         System.out.println("Jakka har " + college12.calcAverage());
 
         System.out.println("Der er ingen med dette studienummer " + college.findStudent(21));
         System.out.println(college.findStudent(20).getName());
-        System.out.println(student.compare(student,student2));
-        System.out.println(student.equals(student2));
+        System.out.println(Jan.equals(Jan));
 
     }
 }

@@ -3,7 +3,7 @@ package Opg2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Test {
+public class TestFirst {
     public static void main(String[] args) {
         List<Integer> janGrades = new ArrayList<>();
         janGrades.add(10);

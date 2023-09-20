@@ -2,6 +2,17 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <addNotNullAssertions enabled="false" />
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="L10" target="1.8" />
+      <module name="L10-JCF" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

@@ -11,7 +11,7 @@ public class MainMerge {
 
      */
     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>(List.of(8, 56, 45, 34, 15, 12, 34, 44));
+        ArrayList<Integer> list = new ArrayList<>(List.of(79, 56, 45, 34, 15, 12, 34, 44));
         System.out.println("Original list: " + list);
 
         mergesort(list, 0, list.size() - 1);

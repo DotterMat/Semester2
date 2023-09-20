@@ -3,7 +3,7 @@ package Opg1;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Main {
+public class MainHashSet {
     public static void main(String[] args) {
         Set<Integer> numbers = new HashSet<>();
         numbers.add(34);
