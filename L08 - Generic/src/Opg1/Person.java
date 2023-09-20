@@ -1,13 +1,13 @@
 package Opg1;
 
-public class Person<t extends Comparable<t>> implements Comparable<Person<t>> {
-    private t name;
+public class Person<T extends Comparable<T>> implements Comparable<Person<T>> {
+    private T name;
 
-    public Person(t name ) {
+    public Person(T name) {
         this.name = name;
     }
     @Override
-    public int compareTo(Person<t> o) {
+    public int compareTo(Person<T> o) {
         return this.name.compareTo(o.name);
     }
 

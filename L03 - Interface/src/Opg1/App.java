@@ -58,7 +58,7 @@ public class App {
         Measurable object = objects[0];
         for (int i = 0; i < objects.length; i++) {
             if (filter.accept(objects[i])) {
-                sum += objects[i].getMeasure();
+                sum += (int) objects[i].getMeasure();
                 count++;
             }
         }

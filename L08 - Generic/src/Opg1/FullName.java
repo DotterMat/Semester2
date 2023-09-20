@@ -15,9 +15,12 @@ public class FullName implements NameComparable<FullName>{
 
     @Override
     public int compareTo(FullName o) {
-        return getName().compareTo(o.getName());
+        if (this.lastName.compareTo(o.lastName) != 0) {
+            return this.lastName.compareTo(o.lastName);
+        } else {
+            return this.firstName.compareTo(o.firstName);
+        }
     }
-
     @Override
     public String toString() {
         return getName();
