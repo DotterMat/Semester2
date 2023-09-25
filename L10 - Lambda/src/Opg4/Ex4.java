@@ -28,7 +28,6 @@ public class Ex4 {
             Runner runner = iterator.next();
             if (runner.getLapTime() >= 40) {
                 iterator.remove();
-
             }
         }
         System.out.println(runners);
