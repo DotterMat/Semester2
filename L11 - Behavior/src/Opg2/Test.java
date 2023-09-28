@@ -8,9 +8,9 @@ import java.util.Comparator;
 
 public class Test {
     public static void main(String[] args) {
-      Customer c1 = new Customer(1, "Alice");
-      Customer c2 = new Customer(2, "Bob");
-      Customer c3 = new Customer(3,"Charlie");
+      Customer c1 = new Customer(33, "Alice");
+      Customer c2 = new Customer(22, "Bob");
+      Customer c3 = new Customer(44,"Charlie");
 
         Comparator<Customer> numberComparator = new NumberComparator();
         System.out.println("Sammenligt tallene");

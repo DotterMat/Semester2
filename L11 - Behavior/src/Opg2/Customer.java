@@ -31,12 +31,9 @@ public class Customer implements Comparable<Customer> {
                 '}';
     }
 
-    public void setComparator(CustomerCumparator comparator) {
-        Customer.comparator = comparator;
-    }
 
     @Override
     public int compareTo(Customer o) {
-        return 0;
+      return this.name.compareTo(o.getName());
     }
 }

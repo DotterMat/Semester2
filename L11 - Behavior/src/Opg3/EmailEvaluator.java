@@ -12,18 +12,9 @@ public class EmailEvaluator implements Evaluator {
     @Override
     public boolean isValid(String s) {
         boolean isValid = isWord(s);
-        if (!isValid) {
-            errorMessage = "Invalid Email-Adress";
-        } else {
-            errorMessage = null;
-        }
         return isValid;
-
     }
-    public String getErrorMessage() {
-        return errorMessage;
 
-    }
 
     /**
      * Returns true, if s is an acceptable word.
@@ -31,7 +22,7 @@ public class EmailEvaluator implements Evaluator {
      * are in 'A'..'Z', 'a'..'z' or '0'..'9'.
      */
     public boolean isWord(String s) {
-        Pattern pattern = Pattern.compile("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]{2,}$", Pattern.CASE_INSENSITIVE);
+        Pattern pattern = Pattern.compile("\\\\.[A-Za-z]{2,}$", Pattern.CASE_INSENSITIVE);
 
 
       if (s.equals("user@host") || s.equals("first.last@host.domain")) {
