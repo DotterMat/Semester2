@@ -22,7 +22,7 @@ public class EmailEvaluator implements Evaluator {
      * are in 'A'..'Z', 'a'..'z' or '0'..'9'.
      */
     public boolean isWord(String s) {
-        Pattern pattern = Pattern.compile("\\\\.[A-Za-z]{2,}$", Pattern.CASE_INSENSITIVE);
+        Pattern pattern = Pattern.compile("\\\\.[A-Za-z]{2,}$");
 
 
       if (s.equals("user@host") || s.equals("first.last@host.domain")) {
