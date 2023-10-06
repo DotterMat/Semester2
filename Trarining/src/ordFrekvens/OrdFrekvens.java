@@ -13,7 +13,7 @@ public class OrdFrekvens {
         List<String> normalizedWords = new ArrayList<>();
 
         for (String word : words) {
-            word = word.replaceAll("[.,!?]", "");
+            word = word.replaceAll("[.,!?']", "");
             word = word.toLowerCase();
             normalizedWords.add(word);
         }

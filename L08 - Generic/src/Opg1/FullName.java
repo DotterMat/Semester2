@@ -13,6 +13,7 @@ public class FullName implements NameComparable<FullName>{
         return firstName + " " + lastName;
     }
 
+
     @Override
     public int compareTo(FullName o) {
         if (this.lastName.compareTo(o.lastName) != 0) {
@@ -20,6 +21,7 @@ public class FullName implements NameComparable<FullName>{
         } else {
             return this.firstName.compareTo(o.firstName);
         }
+
     }
     @Override
     public String toString() {

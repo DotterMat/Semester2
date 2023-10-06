@@ -12,7 +12,7 @@ public class filmOgKaraktere {
         Map<String, List<Integer>> filmratings = new HashMap<>();
 
         try {
-            File file = new File("C:\\Users\\mathi\\IdeaProjects\\Semester2\\L10 - Lambda\\src\\Opg5\\filmanmeldelser.txt");
+            File file = new File("/Users/mathiasskrivernordentoft/Documents/GitHub/Semester2/L10 - Lambda/src/Opg5/filmanmeldelser.txt");
             Scanner scanner = new Scanner(file);
             int numRating = Integer.parseInt(scanner.nextLine());
             String currentFilm = null;

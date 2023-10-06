@@ -2,7 +2,7 @@ package omvendStreng;
 
 public class omvendStreng {
     public static void main(String[] args) {
-        String navn = "jens tidmads";
+        String navn = "Adam";
         System.out.println(omvendt(navn));
 
     }

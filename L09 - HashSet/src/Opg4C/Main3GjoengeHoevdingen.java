@@ -7,7 +7,7 @@ import java.util.*;
 public class Main3GjoengeHoevdingen {
     public static void main(String[] args) {
         try {
-            File myObj = new File("C:\\Users\\mathi\\IdeaProjects\\Semester2\\L09 - HashSet\\src\\Opg4B\\GjoengeHoevdingen.txt");
+            File myObj = new File("GjoengeHoevdingen.txt");
             Scanner reader = new Scanner(myObj);
             Map<Integer, Set<String>> words = new LinkedHashMap<>();
 

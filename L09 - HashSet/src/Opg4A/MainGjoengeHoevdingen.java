@@ -11,7 +11,7 @@ import java.util.TreeSet;
 public class MainGjoengeHoevdingen {
     public static void main(String[] args) {
         try {
-            File myObj = new File("C:\\Users\\mathi\\IdeaProjects\\Semester2\\L09 - HashSet\\src\\Opg4A\\GjoengeHoevdingen.txt");
+            File myObj = new File("/Users/mathiasskrivernordentoft/Documents/GitHub/Semester2/L09 - HashSet/src/Opg4A/GjoengeHoevdingen.txt");
             Scanner reader = new Scanner(myObj);
             Set<String> words = new TreeSet<>();
             int count = 0;

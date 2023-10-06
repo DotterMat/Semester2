@@ -5,7 +5,7 @@ import java.security.KeyStore;
 public class Primtalstjek {
     public static void main(String[] args) {
         int tal = 5;
-        primtal(20);
+        primtal(5);
 
     }
 
