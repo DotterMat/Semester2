@@ -33,7 +33,7 @@ public class ObservableBag implements Bag {
     public void remove(String s) {
         if (elements.containsKey(s)) {
             int count = elements.get(s) - 1;
-            observer.elementRemove(s, count - 1);
+            observer.elementRemove(s, count);
             if (count == 0) {
                 elements.remove(s);
             }

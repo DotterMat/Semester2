@@ -1,17 +1,20 @@
 package Opg2;
 
-import Opg1.ObserverBag;
-
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class Book {
     //Mange til mange forhold
     private Set<Customer> customers = new HashSet<>();
+    private String title;
+    private int count;
     private Set<BookObserver> bookObservers = new HashSet<>();
     private int numberOfCopies;
+
+    public Book(String title, int count) {
+        this.title = title;
+        this.count = count;
+    }
 
 
     public void addCustomer(Customer customer) {

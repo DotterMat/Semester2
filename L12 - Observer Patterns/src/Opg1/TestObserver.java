@@ -19,10 +19,12 @@ public class TestObserver {
         observarableBag.add("apple");
         observarableBag.add("orange");
 
+        System.out.println();
         // Removing elements
         observarableBag.remove("apple");
         observarableBag.remove("banana");
 
+        System.out.println();
         // Getting count for an element
         int count = observarableBag.getCount("orange");
         System.out.println("Count of orange: " + count);

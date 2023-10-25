@@ -11,7 +11,12 @@
       <sourceFolder url="file://$MODULE_DIR$/L10 - Lambda/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Trarining" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/udenForUndervisningen/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/L09 - HashSet/src/Opg4B" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/L09 - HashSet/src" />
+    <content url="file://$MODULE_DIR$/L09 - HashSet/src/Opg2" />
+    <content url="file://$MODULE_DIR$/L09 - HashSet/src/Opg2B" />
+    <content url="file://$MODULE_DIR$/L09 - HashSet/src/Opg2C" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="javafx" level="application" />

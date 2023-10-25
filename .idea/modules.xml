@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/OperativSystemer/src/Afleveringsopgave/Afleveringsopgave (TrådSynkronisering).iml" filepath="$PROJECT_DIR$/OperativSystemer/src/Afleveringsopgave/Afleveringsopgave (TrådSynkronisering).iml" />
       <module fileurl="file://$PROJECT_DIR$/L01 (Polymorphism)/L01.iml" filepath="$PROJECT_DIR$/L01 (Polymorphism)/L01.iml" />
       <module fileurl="file://$PROJECT_DIR$/L02-abstract/L02-abstract.iml" filepath="$PROJECT_DIR$/L02-abstract/L02-abstract.iml" />
       <module fileurl="file://$PROJECT_DIR$/L03 - Interface/L03.iml" filepath="$PROJECT_DIR$/L03 - Interface/L03.iml" />
@@ -14,10 +15,16 @@
       <module fileurl="file://$PROJECT_DIR$/L10 - Lambda/L10 - Lambda.iml" filepath="$PROJECT_DIR$/L10 - Lambda/L10 - Lambda.iml" />
       <module fileurl="file://$PROJECT_DIR$/L11 - Behavior/L11 - Behavior.iml" filepath="$PROJECT_DIR$/L11 - Behavior/L11 - Behavior.iml" />
       <module fileurl="file://$PROJECT_DIR$/L12 - Observer Patterns/L12 - Observer Patterns.iml" filepath="$PROJECT_DIR$/L12 - Observer Patterns/L12 - Observer Patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L13 - Test/L13 - Test.iml" filepath="$PROJECT_DIR$/L13 - Test/L13 - Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OperativSystemer/OperativSystemer.iml" filepath="$PROJECT_DIR$/OperativSystemer/OperativSystemer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L13 - Test/Opg1/Opg1.iml" filepath="$PROJECT_DIR$/L13 - Test/Opg1/Opg1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L13 - Test/Opg2/Opg2.iml" filepath="$PROJECT_DIR$/L13 - Test/Opg2/Opg2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L13 - Test/Opg3/Opg3.iml" filepath="$PROJECT_DIR$/L13 - Test/Opg3/Opg3.iml" />
       <module fileurl="file://$PROJECT_DIR$/SQLJAVA/SQLJAVA.iml" filepath="$PROJECT_DIR$/SQLJAVA/SQLJAVA.iml" />
       <module fileurl="file://$PROJECT_DIR$/Semester2.iml" filepath="$PROJECT_DIR$/Semester2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Trarining/Trarining.iml" filepath="$PROJECT_DIR$/Trarining/Trarining.iml" />
       <module fileurl="file://$PROJECT_DIR$/udenForUndervisningen/UdenForUndervisningen.iml" filepath="$PROJECT_DIR$/udenForUndervisningen/UdenForUndervisningen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L13 - Test/testExample/testExample.iml" filepath="$PROJECT_DIR$/L13 - Test/testExample/testExample.iml" />
     </modules>
   </component>
 </project>
