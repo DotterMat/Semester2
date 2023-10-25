@@ -6,7 +6,6 @@ public class MultithreadingThing implements Runnable{
        int randomTal = (int) (Math.random() * 100);
         boolean[] flag = new boolean[]{true};
         for (int i = 1; i <= randomTal; i++) {
-            flag[i];
             System.out.println(randomTal);
             try {
                 Thread.sleep(1000);
