@@ -6,10 +6,6 @@ public class Faelles {
     private static int globalCounter = 0;
 
 
-    public synchronized void incrementCounter() {
-        globalCounter++;
-    }
-
     public int getGlobalCounter() {
         return globalCounter;
     }
