@@ -1,6 +1,8 @@
 package CompositionJavaMasterclass;
 
-public class Motherboard extends Product{
+import Opg3.Product;
+
+public class Motherboard extends Product {
 private int ramSlots;
 private int cardSlots;
 private String bios;

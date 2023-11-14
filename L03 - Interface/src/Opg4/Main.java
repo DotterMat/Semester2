@@ -1,6 +1,7 @@
 package Opg4;
 
 import Opg3.Indkøbsvogn;
+import Opg3.Product;
 
 import java.time.LocalDate;
 

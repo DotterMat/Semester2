@@ -1,5 +1,7 @@
 package Opg4;
 
+import Opg3.Product;
+
 public class Orderline {
     private int lineNumber;
     private int count;

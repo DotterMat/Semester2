@@ -35,7 +35,6 @@ public class SingleLinkedList<E> implements Queue23Y<E> {
      */
     public void add(E e) {
         Node newNode = new Node(e);
-        Node node = head;
 
         if (head == null) {
             head = newNode;

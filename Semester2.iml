@@ -12,6 +12,16 @@
       <sourceFolder url="file://$MODULE_DIR$/Trarining" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/udenForUndervisningen/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/L09 - HashSet/src/Opg4B" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/L15 - Stack ADT/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/L16 - Queue ADT and Deque ADT/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/L12 - Observer Patterns/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/L14 - listADT/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/OperativSystemer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/OperativSystemer/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/L01 (Polymorphism)/src/Opg5" />
+      <excludeFolder url="file://$MODULE_DIR$/udenForUndervisningen/src/CompositionJavaMasterclass" />
+      <excludeFolder url="file://$MODULE_DIR$/udenForUndervisningen/src/Polymorphism" />
+      <excludeFolder url="file://$MODULE_DIR$/udenForUndervisningen/src/more3Polymorphism" />
     </content>
     <content url="file://$MODULE_DIR$/L09 - HashSet/src" />
     <content url="file://$MODULE_DIR$/L09 - HashSet/src/Opg2" />
