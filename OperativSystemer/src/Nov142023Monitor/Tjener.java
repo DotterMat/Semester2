@@ -14,7 +14,6 @@ public class Tjener extends Thread {
     }
 
     public synchronized void run() {
-        Random random = new Random();
         while (running) {
             try {
                 Thread.sleep(interval);

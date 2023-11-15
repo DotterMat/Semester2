@@ -17,6 +17,7 @@ public class Kok extends Thread {
         Random random = new Random();
         while (running) {
             try {
+                faelles.waitForOrders();
                 Thread.sleep(interval);
                 if (faelles.getOrderCount() > faelles.getCookedCount()) {
                     faelles.incrementCookedCount();

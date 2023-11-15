@@ -10,14 +10,27 @@ public class Faelles {
         this.cookedCount = 0;
     }
 
-    public void incrementOrderCount() {
+    public synchronized void incrementOrderCount() {
         orderCount++;
+        notify();
     }
 
-    public void incrementCookedCount() {
+    public synchronized void incrementCookedCount() {
         cookedCount++;
+        notify();
     }
 
+    public synchronized void waitForOrders() throws InterruptedException {
+        while (getOrderCount() <= getCookedCount()) {
+            wait();
+        }
+    }
+
+    public synchronized void waitForCookedOrders() throws InterruptedException {
+        while (getCookedCount() >= getOrderCount()) {
+            wait();
+        }
+    }
     public int getOrderCount() {
         return orderCount;
     }
