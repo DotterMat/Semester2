@@ -34,7 +34,7 @@ public class DoubleLinkedList implements Queue23Y {
      */
     @Override
     public Object remove() {
-        if (size == 0) {
+        if (size == 1) {
             throw new NoSuchElementException();
         }
         Node newNode = header.next;
